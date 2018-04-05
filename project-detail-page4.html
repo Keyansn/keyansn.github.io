@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+
+    <!-- Meta info -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project Detail</title>
+    <meta content="" name="description" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="#" />
+
+	<link href="project-detail-page.html" rel="next" />
+	<link href="index.html" rel="prev" />
+    <meta name="author" content="" />
+    <meta name="format-detection" content="" />
+
+    <!-- Styles -->
+    <link href="styles/main.css" rel="stylesheet" media="screen, print" type="text/css" />
+    <script src="lib/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="content">
+
+<div id="pfd-work">
+	<div id="work-bio">
+		<header>
+			<div id="pfd">
+
+          <h1>
+            <font size="10" >Real-time digital signal progressing</font>
+            </h1>
+
+            </div>
+
+
+
+
+
+			<div id="preamble">
+
+                <h1>Removing noise from an audio signal in real-time</h1>
+                <h2></h2>
+                <h3><b>Overview</b></h3>
+
+<p>Many different algorithms have been proposed for speech enhancement: the one that we
+will use is known as spectral subtraction. For this project I used the TI C6x DSP board.
+
+This technique operates in the frequency domain and makes the assumption that the spectrum of the input signal can be expressed as the sum of the speech spectrum and the noise spectrum. The procedure works by estimating the spectrum of the background noise and subtracting the noise spectrum from the speech
+
+</p>
+
+<p><a href="Real_Time_Digital_Signal_Processing_Project.pdf" >The report is available here</a>
+</p>
+
+<h2></h2>
+				<h3><b>Skills</b></h3>
+
+        <p><b>C:</b> All the code for the project was written in C. Thankfully, I was already very familiar with both C and C++ but it didn’t improve my programming skills having to implement complex calculations on real-time data</p>
+
+<p><b>Code Composer Studio:</b> The IDE used for this project was Code Composer Studio. I had to utilise the built in monitoring functions to iron out bugs. </p>
+
+<p><b>TI C6x DSP:</b> I am now familiar with this particular board including the problems which arise due to the low-pass filter placed on the inputs and outputs.</p>
+
+<p><b>Optimisations:</b> Eight different optimisations were implemented in total, however in actual usage it was discovered that only a certain combination resulted in the cleanest sample.</p>
+
+
+
+
+
+
+
+
+
+			</div>
+
+            <ul id="links">
+                <li>
+                    <a href="index.html" id="home">Home</a>
+                </li>
+
+            </ul>
+		</header>
+    </div>
+
+
+</div>
+</section>
+
+
+
+    </div><!-- container -->
+
+    <nav id="toc">
+        <ul>
+            <li>
+                <a href="index.html">Work.</a></li>
+            <li>
+                <a href="about.html">About.</a></li>
+
+        </ul>
+	</nav>
+
+    <div id="no-script">
+        <div>
+            <p>
+                The Pyaari website is fully responsive and requires Javascript.<br />
+                Please <a href="http://enable-javascript.com/">enable javascript</a> to use this site without issue.</p>
+        </div>
+    </div><!-- no-script -->
+
+  <script src="ajax/jquery-1.11.0.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/jquery-ext.js"></script>
+  	<script src="scripts/pyaari-main.1.0.js"></script>
+    <script src="scripts/pyaari-menu.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            PfdMenu._ctor();
+        });
+    </script>
+
+    <script src="scripts/pyaari-work-bio.1.0.js"></script>
+
+
+</body>
+</html>

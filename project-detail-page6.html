@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+
+    <!-- Meta info -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project Detail </title>
+    <meta content="" name="description" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="#" />
+
+	<link href="project-detail-page.html" rel="next" />
+	<link href="index.html" rel="prev" />
+    <meta name="author" content="" />
+    <meta name="format-detection" content="" />
+
+    <!-- Styles -->
+    <link href="styles/main.css" rel="stylesheet" media="screen, print" type="text/css" />
+    <script src="lib/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="content">
+
+<div id="pfd-work">
+	<div id="work-bio">
+		<header>
+			<div id="pfd">
+
+          <h1>
+            <font size="10" >Motor Controller</font>
+            </h1>
+
+            </div>
+
+
+
+
+
+			<div id="preamble">
+
+                <h1>Precision motor control of a brushless motor</h1>
+                <h2></h2>
+                <h3><b>Overview</b></h3>
+
+<p>
+
+  For Embedded Systems we were given a motor with photointerrupters and given the following specifications to implement in mbed on an esp8266:<br>
+
+  1. Spin for a defined number of rotations and stop without overshooting<br>
+  2. Spin at a defined angular velocity<br>
+  3. Make the motor play a tune as it works<br>
+  4. Respond to commands given over the serial port<br>
+  5. Write efficient, thread-safe firmware<br>
+  6. Use profiling to show that timing constraints are met<br>
+  </p><p>
+  To control the rotations and angular velocity, two separate PID controllers were implemented in mbed and were tuned until they didn’t overshoot. The tune was created by increasing the frequency of the PWM applied to the motor and the individual notes were achieved by matching the frequency to the frequency of the notes. This works because every time the electromagnet is switched on a small vibration occurs. Multiple threads with differing priorities were used to ensure that the timing constraints were always met.
+
+
+
+</p>
+
+<p><a href="embedded-systems-motor.pdf" >The report is available here</a>
+</p>
+<p><a href="https://github.com/mattinmir/motor" >The code is available here</a>
+</p>
+
+<h2></h2>
+				<h3><b>Skills</b></h3>
+
+        <p><b>mbed:</b> The ARM mbed IoT Device Platform provides the operating system, cloud services, tools and developer ecosystem. It is unlike any other IDE i’ve used previously so it was a great learning experience becoming familiar with it. </p>
+
+        <p><b>deadlocks:</b> As we implemented several different threads with different priorities it was evident that special attention had to be made to ensure deadlocks weren’t able to occur at all .</p>
+
+        <p><b>PID controllers:</b> While we have had several years of teaching around the theory behind PID controllers, we had never actually implemented one before nor had we turned one. </p>
+
+        <p><b>Sound generation:</b> This project taught me how to use PWM to generate sounds which can be used to provide information to the user.</p>
+<h2></h2>
+        <h3><b>Gallery</b></h3>
+
+
+        <div id="our-work">
+            <ul>
+
+        <li><img src="images/work/es.jpg" alt="Pyaari"></li>
+        <li><img src="images/work/es1.jpg" alt="Pyaari"></li>
+
+
+        </ul>
+        </div>
+
+			</div>
+
+            <ul id="links">
+                <li>
+                    <a href="index.html" id="home">Home</a>
+                </li>
+
+            </ul>
+		</header>
+    </div>
+
+
+</div>
+</section>
+
+
+
+    </div><!-- container -->
+
+    <nav id="toc">
+        <ul>
+            <li>
+                <a href="index.html">Work.</a></li>
+            <li>
+                <a href="about.html">About.</a></li>
+
+        </ul>
+	</nav>
+
+    <div id="no-script">
+        <div>
+            <p>
+                The Pyaari website is fully responsive and requires Javascript.<br />
+                Please <a href="http://enable-javascript.com/">enable javascript</a> to use this site without issue.</p>
+        </div>
+    </div><!-- no-script -->
+
+  <script src="ajax/jquery-1.11.0.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/jquery-ext.js"></script>
+  	<script src="scripts/pyaari-main.1.0.js"></script>
+    <script src="scripts/pyaari-menu.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            PfdMenu._ctor();
+        });
+    </script>
+
+    <script src="scripts/pyaari-work-bio.1.0.js"></script>
+
+
+</body>
+</html>

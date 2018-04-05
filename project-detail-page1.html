@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+
+    <!-- Meta info -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project Detail</title>
+    <meta content="" name="description" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="#" />
+
+	<link href="project-detail-page.html" rel="next" />
+	<link href="index.html" rel="prev" />
+    <meta name="author" content="" />
+    <meta name="format-detection" content="" />
+
+    <!-- Styles -->
+    <link href="styles/main.css" rel="stylesheet" media="screen, print" type="text/css" />
+    <script src="lib/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="content">
+
+<div id="pfd-work">
+	<div id="work-bio">
+		<header>
+			<div id="pfd">
+
+          <h1>
+            <font size="10" >IoTea</font>
+            </h1>
+
+            </div>
+
+
+
+
+
+			<div id="preamble">
+
+                <h1>Internet of Things smart tea brewer</h1>
+                <h2></h2>
+                <h3><b>Overview</b></h3>
+                <p>For Third year Embedded Systems course, we were assigned to collaborate in teams of four to design an Internet of Things device with a given random sensor and an Adafruit Huzzah Feather board. We were given a TSL2561 luminosity sensor which outputted a lux value via an I2C connection. Given that tea changes opacity during the steeping process, which is measurable with said sensor, we decided to develop a prototype of a smart tea brewer which could detect when the tea had reached the predefined strength. A connection to an MQTT server was established and from which the prototype was able to communicate with a MySQL server. </p>
+
+                <p><a href="indexIoTea.html" >The website is available here</a>
+                </p>
+<h2></h2>
+				<h3><b>Skills</b></h3>
+
+        <p><b>MicroPython:</b> We were instructed to use MicroPython as it has fewer resources easily available meaning that we couldn’t rely on material from the internet. MicroPython is simply a stripped down fork of Python so it was familiar yet new at the same time.</p>
+
+<p><b>I2C:</b> This was the first time encountering the I2C protocol so a solid understanding had to be achieved. As we were developing using MicroPython, there was additional work needed as we had to create the driver ourselves. </p>
+
+<p><b>MQTT:</b> Part of the specification was that the prototype created must be able to communicate with a pre setup MQTT server. This was done so that the data for the different strengths of teas could be sent to the device as well as from the device back to the server to message when done.</p>
+
+<p><b>MySQL:</b> A MySQL database was set up for storing this tea making data. Each tea requires very specific opacity values and temperature to ensure accurate reproduction every time. </p>
+
+<p><b>HTML5:</b> A website was created using HTML5 to explain the prototype and what problems it overcomes. The website can be found <a href="c" >here.</a></p>
+
+
+<h3><b>Gallery</b></h3>
+
+        <img src="images/pyaari-logo.png" alt="Pyaari Website - For Website and Graphic Designers">
+
+
+
+
+
+			</div>
+
+            <ul id="links">
+                <li>
+                    <a href="index.html" id="home">Home</a>
+                </li>
+
+            </ul>
+		</header>
+    </div>
+
+
+</div>
+</section>
+
+
+
+    </div><!-- container -->
+
+    <nav id="toc">
+        <ul>
+            <li>
+                <a href="index.html">Work.</a></li>
+            <li>
+                <a href="about.html">About.</a></li>
+
+        </ul>
+	</nav>
+
+    <div id="no-script">
+        <div>
+            <p>
+                The Pyaari website is fully responsive and requires Javascript.<br />
+                Please <a href="http://enable-javascript.com/">enable javascript</a> to use this site without issue.</p>
+        </div>
+    </div><!-- no-script -->
+
+  <script src="ajax/jquery-1.11.0.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/jquery-ext.js"></script>
+  	<script src="scripts/pyaari-main.1.0.js"></script>
+    <script src="scripts/pyaari-menu.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            PfdMenu._ctor();
+        });
+    </script>
+
+    <script src="scripts/pyaari-work-bio.1.0.js"></script>
+
+
+</body>
+</html>
