@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Visualize by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+p.ex1 {
+		margin-top: 0px;
+    margin-left: 30px;
+
+}
+
+
+</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+
+						<a href="index.html"><span class="avatar"><img src="images/avatar.jpg" alt=""/></span></a>
+
+						<ul class="icons">
+
+							<li><a href="index.html" class="icon style2 fa-arrow-left"><span class="label">Back</span></a></li>
+
+							<li><a href="embedded-systems-motor.pdf" class="icon style2 fa-file-pdf-o"><span class="label">Report</span></a></li>
+							<li><a href="https://github.com/mattinmir/motor" class="icon style2 fa-github"><span class="label">github</span></a></li>
+						</ul>
+
+						<h1><strong>Precision motor control of a brushless motor</strong></h1>
+
+
+					</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						For Embedded Systems we were given a motor with photointerrupters and given the following specifications to implement in mbed on an esp8266:<br>
+						<BLOCKQUOTE>
+					     1. Spin for a defined number of rotations and stop without overshooting<br>
+					     2. Spin at a defined angular velocity<br>
+					     3. Make the motor play a tune as it works<br>
+					     4. Respond to commands given over the serial port<br>
+					     5. Write efficient, thread-safe firmware<br>
+					     6. Use profiling to show that timing constraints are met<br>
+							 </BLOCKQUOTE>
+					  </p><p>
+					  To control the rotations and angular velocity, two separate PID controllers were implemented in mbed and were tuned until they didn’t overshoot. The tune was created by increasing the frequency of the PWM applied to the motor and the individual notes were achieved by matching the frequency to the frequency of the notes. This works because every time the electromagnet is switched on a small vibration occurs. Multiple threads with differing priorities were used to ensure that the timing constraints were always met.
+
+
+
+						<p><strong><a href="embedded-systems-motor.pdf" >The report is available here</a>
+						</p></strong>
+						<p><strong><a href="https://github.com/mattinmir/motor" >The code is available here</a>
+						</p></strong>
+
+
+
+
+
+		<h2><b>Skills</b></h2>
+
+		<p><b>mbed:</b> The ARM mbed IoT Device Platform provides the operating system, cloud services, tools and developer ecosystem. It is unlike any other IDE i’ve used previously so it was a great learning experience becoming familiar with it. </p>
+
+		<p><b>deadlocks:</b> As we implemented several different threads with different priorities it was evident that special attention had to be made to ensure deadlocks weren’t able to occur at all .</p>
+
+		<p><b>PID controllers:</b> While we have had several years of teaching around the theory behind PID controllers, we had never actually implemented one before nor had we turned one. </p>
+
+
+
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>&copy; Keyan Sadeghi Namaghi. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
