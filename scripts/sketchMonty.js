@@ -71,7 +71,7 @@ function setup() {
   buttonOne = createButton('1 Simulation');
   buttonOne.position(250, 650);
   buttonOne.size(100,100);
-  buttonOne.mousePressed(keyReleased());
+  buttonOne.mousePressed(oneSim);
 }
 
 function oneHundredSims(){
@@ -79,6 +79,12 @@ function oneHundredSims(){
     keyReleased();
   }
 }
+function oneSim(){
+  
+    keyReleased();
+  
+}
+
 
 function touchStarted(){
 //  keyReleased();
