@@ -67,6 +67,11 @@ function setup() {
   button.position(450, 650);
   button.size(100,100);
   button.mousePressed(oneHundredSims);
+  
+  buttonOne = createButton('1 Simulation');
+  buttonOne.position(250, 650);
+  buttonOne.size(100,100);
+  buttonOne.mousePressed(keyReleased());
 }
 
 function oneHundredSims(){
