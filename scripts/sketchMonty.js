@@ -76,7 +76,7 @@ function oneHundredSims(){
 }
 
 function touchStarted(){
-  keyReleased();
+//  keyReleased();
 }
 
 function keyReleased() {
